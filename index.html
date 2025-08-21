@@ -1,32 +1,105 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>best cars in the world</title>
+        <title>Best cars in the world</title>
         <style>
             body {
-                background-image: url('bc.jpeg');
+                background-color: black;
                 background-size: cover;
                 background-position: center;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 20px;
+                padding: 20px;
+                color: rgb(255, 255, 255);
+            }
+            img {
+                border-radius: 10px;
+                box-shadow: 10px 10px 100px rgb(255, 0, 0);
+            }
+            p {
+                font-size: 18px;
+                color: rgb(255, 0, 0);
+            }
+            h2 {
+                font-size: 24px;
+                color: rgb(255, 0, 0);
+            }
+            div {
+                background-color: rgba(0, 0, 0, 0.8);
+                padding: 20px;
+                
+            }
+            h1 {
+                text-align: center;
+                color: rgb(255, 0, 0);
+                font-size: 36px;
+            }
+            #bugatti {
+                grid-area: bugatti;
+            }
+            #koenigsegg {
+                grid-area: koenigsegg;
+            }
+            #ferrari {
+                grid-area: ferrari;
+            }
+            #porsche {
+                grid-area: porsche;
+            }
+            #mclaren {
+                grid-area: mclaren;
+                align-self: center;
+            }
+            .grid-container {
+                grid-template-columns: auto auto;
+                grid-template-areas: 
+                    "bugatti koenigsegg"
+                    "ferrari porsche"
+                    "mclaren bysaim";
             }
         </style>
     </head>
     <body>
-        <h1>world best cars</h1>
-        <h2>buggati chiron</h2>
+        <header>
+            <h1>World Best Cars</h1>
+        </header>
+        <div class="grid-container">
+        
+        <div id="bugatti">
+        <h2>Buggati Chiron</h2>
         <img src="buggati.jpg" width="300" height="200">
         <p><b></b>The Bugatti Chiron is a luxury hypercar known for its exceptional performance ,speed and  sleek design.</p>
+        </div>
+        <div id="koenigsegg">
         <h2>Koenigsegg Regera</h2>
         <img src="car.png" width="300" height="200">
-        <p>The Koenigsegg Regera is a hybrid sports car that combines extreme performance with luxury and comfort.</p>
+        <p>The Koenigsegg Regera is a hybrid sports car that combines extreme performance with luxury and comfort.
+            </p>
+
+
+        </div>
+        <div id="ferrari">
         <h2>Ferrari LaFerrari</h2>
         <img src="fast.jpeg" width="300" height="200">
         <p>The Ferrari LaFerrari is a limited-production hybrid sports car that represents the pinnacle of Ferrari's engineering and design.</p>
-        <h2>Porshe 918 spyder</h2>
+        </div>
+        <div id="porsche">
+        <h2>Porshe 918 Spyder</h2>
         <img src="luve.jpeg" width="300" height="200">
         <p>The Porsche 918 Spyder is a plug-in hybrid supercar that offers a blend of performance, efficiency, and cutting-edge technology.</p>
+        </div>
+        <div id="mclaren">
         <h2>McLaren P1</h2>
         <img src="nice.jpeg" width="320" height="200">
         <p>The McLaren P1 is a limited-production hybrid supercar that showcases McLaren's expertise in aerodynamics and performance engineering.</p>
-        <h2>By Saim</h2>
+        </div>
+        <h2>By Saim Arts</h2>
+        <p>Created by Saim <bR> A car enthusiast and web developer.<br>Karachi,Pakistan. </p>
+        </div>
     </body>
+    <footer>
+        <p>© 2025 Saim Arts. All rights reserved.</p>
 </html>
